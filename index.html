@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d979a3e038.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
     <div class="container">
         <div class="header">
             <div class="search-box">
@@ -17,13 +20,18 @@
             </div>
         </div>
 
+        <div class="loading-spinner" style="display: none;">
+            <i class="fa fa-spinner fa-spin fa-3x"></i>
+        </div>
+        
+
         <div class="location-not-found">
             <h1>Sorry, Location not found!!!</h1>
-            <img src="/assets/404.png" alt="404 Error">
+            <img src="assets/404.png" alt="404 Error">
         </div>
 
         <div class="weather-body">
-            <img src="/assets/cloud.png" alt="Weather Image" class="weather-img">
+            <img src="assets/cloud.png" alt="Weather Image" class="weather-img">
 
             <div class="weather-box">
                 <p class="temperature">0 <sup>°C</sup></p>
